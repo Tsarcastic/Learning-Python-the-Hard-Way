@@ -9,8 +9,8 @@ class Scene(object):
 
 class Engine(object):
 
-    def __Init__(self, scene_map):
-        self.scene_map = scene_map
+    def __Init__(self):
+        self.scene_map = a_map
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
