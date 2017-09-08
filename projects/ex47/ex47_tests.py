@@ -1,4 +1,4 @@
-from nose.tools import
+from nose.tools import *
 from ex47.game import Room
 
 def test_room():
@@ -13,5 +13,5 @@ def test_room_paths():
     north = Room("North", "Test room in the north.")
     south = Room("South", "Test room in the south")
 
-    center.add_paths(['north':north, 'south':south])
+    center.add_paths({'north':north, 'south':south})
     assert_equal(center.go('north'), north)
